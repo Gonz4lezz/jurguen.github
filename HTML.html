@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jurguen Calvo Gonzalez">
+    <meta name="description" content="Página demostrativa de etiquetas HTML5">
+    <meta name="keywords" content="etiquetas, web, desarrollo">
+    <title>Demostración de Etiquetas HTML5 - Jurguen Calvo</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- INFORMACIÓN PERSONAL -->
+    <h1>Demostración de Etiquetas HTML5</h1>
+    <p><strong>Estudiante:</strong> Jurguen Calvo Gonzalez</p>
+    <img src="https://placehold.co/150x150?text=Hello" alt="Fotografía" width="150" height="150">
+
+    <!-- A. ETIQUETAS DE ESTRUCTURA BÁSICA (Ya implementadas arriba) -->
+    <div>
+        <h2>A. Etiquetas de Estructura Básica</h2>
+        <p>Las etiquetas de estructura básica ya están implementadas en este documento:</p>
+        <ul>
+            <li>&lt;!DOCTYPE&gt; - Define el documento como HTML5</li>
+            <li>&lt;html&gt; - Elemento raíz del documento</li>
+            <li>&lt;head&gt; - Contiene metadatos del documento</li>
+            <li>&lt;title&gt; - Título mostrado en la pestaña del navegador</li>
+            <li>&lt;base&gt; - URL base para enlaces relativos</li>
+            <li>&lt;link&gt; - Enlace a recursos externos (favicon)</li>
+            <li>&lt;meta&gt; - Metadatos como charset, viewport, author, etc.</li>
+            <li>&lt;body&gt; - Cuerpo del documento con contenido visible</li>
+        </ul>
+    </div>
+
+    <!-- B. ETIQUETAS DE ESTRUCTURA DE SECCIÓN -->
+    <h2>B. Etiquetas de Estructura de Sección</h2>
+    
+    <h3>Encabezados jerárquicos:</h3>
+    <h1>Encabezado H1 - Más importante</h1>
+    <h2>Encabezado H2</h2>
+    <h3>Encabezado H3</h3>
+    <h4>Encabezado H4</h4>
+    <h5>Encabezado H5</h5>
+    <h6>Encabezado H6 - Menos importante</h6>
+
+    <hgroup>
+        <h2>Título Principal del Artículo</h2>
+        <h3>Subtítulo explicativo del contenido</h3>
+    </hgroup>
+
+    <address>
+        <strong>Información de contacto:</strong><br>
+        Nombre: Jurguen<br>
+        Email: email@gmail.com<br>
+        Teléfono: 1234-5678<br>
+        Dirección: Alajuela, Costa Rica
+    </address>
+
+    <div>
+        <p>Esta es una división (div) que agrupa contenido relacionado para aplicar estilos o manipulación con JavaScript.</p>
+    </div>
+
+    <h3>Iframe - Página web dentro de otra:</h3>
+    <iframe src="https://x.com" width="600" height="300" title="x.com">
+        Tu navegador no soporta iframes.
+    </iframe>
+
+    <!-- C. ETIQUETAS DE ESTRUCTURA DE GRUPO -->
+    <h2>C. Etiquetas de Estructura de Grupo</h2>
+
+    <h3>Lista desordenada (ul):</h3>
+    <ul>
+        <li>Primer elemento de la lista</li>
+        <li>Segundo elemento de la lista</li>
+        <li>Tercer elemento de la lista</li>
+    </ul>
+
+    <h3>Lista ordenada (ol):</h3>
+    <ol>
+        <li>Primer paso del proceso</li>
+        <li>Segundo paso del proceso</li>
+        <li>Tercer paso del proceso</li>
+    </ol>
+
+    <h3>Lista de descripción (dl):</h3>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Lenguaje de marcado de hipertexto para crear páginas web</dd>
+        <dt>CSS</dt>
+        <dd>Hojas de estilo en cascada para dar formato a documentos HTML</dd>
+        <dt>JavaScript</dt>
+        <dd>Lenguaje de programación para crear interactividad en páginas web</dd>
+    </dl>
+
+    <figure>
+        <img src="https://via.placeholder.com/400x200?text=Imagen+de+Ejemplo" alt="Imagen de ejemplo">
+        <figcaption>Esta es la leyenda de la figura que explica el contenido de la imagen</figcaption>
+    </figure>
+
+    <details>
+        <summary>Haz clic aquí para ver más información</summary>
+        <p>Este contenido se muestra cuando se expande el elemento details. Es útil para crear secciones colapsables sin JavaScript.</p>
+    </details>
+
+    <dialog id="miDialog">
+        <p>Este es un diálogo modal. Presiona ESC para cerrarlo.</p>
+        <button onclick="document.getElementById('miDialog').close()">Cerrar</button>
+    </dialog>
+    <button onclick="document.getElementById('miDialog').showModal()">Abrir Diálogo</button>
+
+    <!-- D. ETIQUETAS DE TEXTO -->
+    <h2>D. Etiquetas de Texto</h2>
+
+    <p>Este es un párrafo normal que puede contener texto, <a href="#">enlaces</a> y otros elementos.</p>
+
+    <p>Este párrafo tiene un salto de línea<br>aquí en el medio del texto.</p>
+
+    <pre>
+    Este es texto preformateado
+    que conserva    los espacios
+    y los saltos de línea
+    tal como se escriben.
+    </pre>
+
+    <blockquote cite="https://www.w3.org/TR/html52/">
+        "HTML5 es la quinta versión del lenguaje de marcado HTML que define una plataforma para aplicaciones web."
+    </blockquote>
+
+    <p>Como dijo Einstein: <q>La imaginación es más importante que el conocimiento.</q></p>
+
+    <p>Esta cita proviene del libro <cite>Teoría de la Relatividad</cite> de Albert Einstein.</p>
+
+    <p>La <abbr title="Organización Mundial de la Salud">OMS</abbr> es una agencia especializada de las Naciones Unidas.</p>
+
+    <p>Un <dfn title="Lenguaje de marcado de hipertexto">HTML</dfn> es un lenguaje de marcado.</p>
+
+    <p>Para crear un párrafo en HTML usa: <code>&lt;p&gt;Tu texto aquí&lt;/p&gt;</code></p>
+
+    <p>Para guardar un archivo presiona <kbd>Ctrl + S</kbd> en Windows o <kbd>Cmd + S</kbd> en Mac.</p>
+
+    <p>Este texto está en <b>negrita</b> para resaltarlo visualmente.</p>
+
+    <p>Este texto es <strong>muy importante</strong> y tiene significado semántico.</p>
+
+    <p>Este texto está en <i>cursiva</i> para marcarlo como diferente.</p>
+
+    <p>Este texto tiene <em>énfasis</em> y transmite importancia semántica.</p>
+
+    <p>Este texto está <mark>marcado o resaltado</mark> como si fuera con un marcador.</p>
+
+    <p>Este es texto normal y <small>este es texto pequeño para información secundaria</small>.</p>
+
+    <p>El precio original era $100, <del>pero ahora está rebajado</del> <ins>y cuesta solo $80</ins>.</p>
+
+    <p>La fórmula del agua es H<sub>2</sub>O y la ecuación de Einstein es E=mc<sup>2</sup>.</p>
+
+    <p>La conferencia será el <time datetime="2024-03-15T14:00">15 de marzo de 2024 a las 2:00 PM</time>.</p>
+
+    <p>El producto tiene una calificación de <data value="4.5">4.5 estrellas</data> de 5.</p>
+
+    <p>Este párrafo contiene un <span>texto específico</span> marcado con span para aplicar estilos.</p>
+
+    <!-- E. ETIQUETAS DE ENLACE -->
+    <h2>E. Etiquetas de Enlace</h2>
+
+    <p><a href="https://www.w3schools.com" target="_blank">Este es un enlace a W3Schools</a></p>
+    <p><a href="#top">Este enlace va al inicio de la página</a></p>
+    <p><a href="mailto:ejemplo@correo.com">Este enlace abre el cliente de correo</a></p>
+
+    <h3>Mapa de imagen con áreas clicables:</h3>
+    <img src="https://via.placeholder.com/400x200?text=Mapa+de+Imagen" alt="Mapa de ejemplo" usemap="#mapaEjemplo">
+    <map name="mapaEjemplo">
+        <area shape="rect" coords="0,0,200,100" href="#" alt="Área izquierda" title="Área izquierda">
+        <area shape="rect" coords="200,0,400,100" href="#" alt="Área derecha" title="Área derecha">
