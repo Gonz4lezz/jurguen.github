@@ -1,0 +1,524 @@
+/* ===== ESTILOS GENERALES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* ===== VIEWPORT Y RESPONSIVE BASE ===== */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ===== HEADER PERSONALIZADO ===== */
+header {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* ===== NAVEGACIÓN MEJORADA ===== */
+.navbar {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    padding: 0.75rem 1.25rem !important;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    margin: 0 0.25rem;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(255,255,255,0.1);
+    transform: translateY(-2px);
+}
+
+/* ===== ASIDE SIDEBAR ===== */
+aside {
+    background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
+    border-right: 3px solid #007bff;
+    min-height: calc(100vh - 200px);
+    position: sticky;
+    top: 76px;
+}
+
+aside h4 {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+aside ul li {
+    margin-bottom: 0.5rem;
+}
+
+aside a {
+    color: #495057;
+    transition: all 0.3s ease;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    display: block;
+}
+
+aside a:hover {
+    color: #007bff;
+    background-color: rgba(0,123,255,0.1);
+    transform: translateX(5px);
+}
+
+/* ===== CONTENIDO PRINCIPAL ===== */
+main {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    margin: 1rem 0;
+}
+
+/* ===== ARTÍCULOS ===== */
+article {
+    padding: 2rem 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+article:last-child {
+    border-bottom: none;
+}
+
+article h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-left: 1rem;
+}
+
+article h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: currentColor;
+    border-radius: 2px;
+}
+
+article h3 {
+    color: #495057;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+article h4 {
+    color: #6c757d;
+    font-size: 1.2rem;
+    margin: 1.5rem 0 0.75rem 0;
+    font-weight: 600;
+}
+
+article p {
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+article ul, article ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+article li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+/* ===== CÓDIGO Y ELEMENTOS TÉCNICOS ===== */
+code {
+    background-color: #f8f9fa;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+}
+
+.bg-dark code {
+    background-color: transparent;
+    color: #f8f9fa;
+}
+
+/* ===== IMÁGENES RESPONSIVAS ===== */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.img-fluid {
+    transition: transform 0.3s ease;
+}
+
+.img-fluid:hover {
+    transform: scale(1.05);
+}
+
+/* ===== ALERTAS PERSONALIZADAS ===== */
+.alert {
+    border: none;
+    border-left: 4px solid;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.alert-info {
+    background: linear-gradient(135deg, #d1ecf1 0%, #bee5eb 100%);
+    border-left-color: #17a2b8;
+}
+
+/* ===== CAROUSEL PERSONALIZADO ===== */
+.carousel {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.carousel-item img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: rgba(0,0,0,0.7);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+/* ===== ACCORDION PERSONALIZADO ===== */
+.accordion-button {
+    font-weight: 600;
+    background-color: #f8f9fa;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #007bff;
+    color: white;
+}
+
+.accordion-body {
+    background-color: #ffffff;
+    border-top: 1px solid #dee2e6;
+}
+
+/* ===== GALERÍA DE IMÁGENES ===== */
+.row.g-2 img {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.row.g-2 img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    z-index: 10;
+    position: relative;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: linear-gradient(135deg, #343a40 0%, #212529 100%);
+    margin-top: 3rem;
+}
+
+footer h5 {
+    color: #007bff;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: #adb5bd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #007bff;
+}
+
+footer hr {
+    border-color: #495057;
+}
+
+/* ===== MEDIA QUERIES PARA RESPONSIVE DESIGN ===== */
+
+/* Tablets y pantallas medianas */
+@media screen and (max-width: 1024px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    article h2 {
+        font-size: 1.8rem;
+    }
+    
+    main {
+        margin: 0.5rem 0;
+    }
+}
+
+/* Tablets pequeñas */
+@media screen and (max-width: 768px) {
+    /* Header responsive */
+    header h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    
+    header p {
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+    /* Navegación móvil */
+    .navbar-nav {
+        text-align: center;
+    }
+    
+    .navbar-nav .nav-link {
+        margin: 0.25rem 0;
+        border-radius: 5px;
+    }
+    
+    /* Aside oculto en móvil */
+    aside {
+        display: none !important;
+    }
+    
+    /* Main ocupa todo el ancho */
+    main {
+        padding: 1.5rem !important;
+    }
+    
+    /* Artículos más compactos */
+    article {
+        padding: 1.5rem 0;
+    }
+    
+    article h2 {
+        font-size: 1.6rem;
+    }
+    
+    article h3 {
+        font-size: 1.3rem;
+    }
+    
+    /* Carousel más pequeño */
+    .carousel-item img {
+        height: 200px;
+    }
+    
+    /* Footer responsive */
+    footer .row > div {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Móviles */
+@media screen and (max-width: 576px) {
+    /* Header muy compacto */
+    header {
+        padding: 1rem 0 !important;
+    }
+    
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    header p {
+        font-size: 0.9rem;
+    }
+    
+    /* Contenido principal */
+    main {
+        padding: 1rem !important;
+        margin: 0;
+        border-radius: 0;
+    }
+    
+    /* Artículos muy compactos */
+    article {
+        padding: 1rem 0;
+    }
+    
+    article h2 {
+        font-size: 1.4rem;
+        padding-left: 0.5rem;
+    }
+    
+    article h2::before {
+        width: 3px;
+    }
+    
+    article h3 {
+        font-size: 1.2rem;
+    }
+    
+    article p {
+        font-size: 1rem;
+        text-align: left;
+    }
+    
+    /* Código responsive */
+    code {
+        font-size: 0.8rem;
+        word-break: break-all;
+    }
+    
+    /* Carousel móvil */
+    .carousel-item img {
+        height: 150px;
+    }
+    
+    .carousel-caption {
+        display: none !important;
+    }
+    
+    /* Galería responsive */
+    .row.g-2 .col-6 {
+        margin-bottom: 0.5rem;
+    }
+    
+    /* Footer móvil */
+    footer {
+        padding: 2rem 0 !important;
+    }
+    
+    footer h5 {
+        font-size: 1.1rem;
+    }
+    
+    footer p, footer li {
+        font-size: 0.9rem;
+    }
+}
+
+/* Pantallas muy pequeñas */
+@media screen and (max-width: 320px) {
+    header h1 {
+        font-size: 1.3rem;
+    }
+    
+    article h2 {
+        font-size: 1.2rem;
+    }
+    
+    article h3 {
+        font-size: 1.1rem;
+    }
+    
+    .carousel-item img {
+        height: 120px;
+    }
+}
+
+/* ===== ANIMACIONES Y TRANSICIONES ===== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+article {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* ===== UTILIDADES ADICIONALES ===== */
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.box-shadow {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.border-gradient {
+    border: 2px solid;
+    border-image: linear-gradient(45deg, #007bff, #28a745) 1;
+}
+
+/* ===== SCROLL PERSONALIZADO ===== */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #007bff;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0056b3;
+}
+
+/* ===== ESTADOS DE FOCUS PARA ACCESIBILIDAD ===== */
+a:focus,
+button:focus,
+.btn:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+    .navbar,
+    aside,
+    footer,
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none !important;
+    }
+    
+    main {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+    }
+    
+    article {
+        page-break-inside: avoid;
+    }
+    
+    h2 {
+        page-break-after: avoid;
+    }
+}
