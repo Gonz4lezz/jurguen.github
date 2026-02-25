@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Foody - Organic Food Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+
+    <!-- Customized Bootstrap 5 Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <h1 class="fw-bold text-primary m-0">F<span class="text-secondary">oo</span>dy</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#productos">Productos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                            Información
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#blog">Blog</a></li>
+                            <li><a class="dropdown-item" href="#caracteristicas">Características</a></li>
+                            <li><a class="dropdown-item" href="#fincas">Fincas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contáctenos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+        </div>
+        <div class="carousel-inner" id="home">
+            <div class="carousel-item active">
+                <img src="img/carousel-1.jpg" class="d-block w-100" alt="Image">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="display-4 text-white mb-4">Organic Food Is Good For Health</h1>
+                    <a href="#productos" class="btn btn-primary me-3">Productos</a>
+                    <a href="#servicios" class="btn btn-outline-light">Servicios</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/carousel-2.jpg" class="d-block w-100" alt="Image">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="display-4 text-white mb-4">Natural Food Is Always Healthy</h1>
+                    <a href="#productos" class="btn btn-primary me-3">Productos</a>
+                    <a href="#servicios" class="btn btn-outline-light">Servicios</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- Mejores Frutas Start -->
+    <div class="container-fluid py-5" id="nosotros">
+        <div class="container">
+            <div class="mejores-frutas-container">
+                <div class="mejores-frutas-image">
+                    <img class="img-fluid rounded" src="img/about.jpg" alt="Imagen no disponible">
+                </div>
+                <div class="mejores-frutas-content">
+                    <h1 class="display-5 mb-4">Mejores Frutas y Verduras Orgánicas</h1>
+                    <p class="mb-4">Las frutas y verduras orgánicas, libres de pesticidas y fertilizantes sintéticos, son una opción nutritiva y amigable con el medio ambiente</p>
+                    <p class="mb-3"><i class="fa fa-check text-primary me-3"></i>Nutrientes: Orgánicos, más vitaminas y minerales.</p>
+                    <p class="mb-3"><i class="fa fa-check text-primary me-3"></i>Sabor natural: Sin químicos, más auténtico.</p>
+                    <p class="mb-4"><i class="fa fa-check text-primary me-3"></i>Eco-amigables: Cultivo orgánico, mejor para el planeta.</p>
+                    <a class="btn btn-primary rounded-pill py-3 px-5" href="">Más Información</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mejores Frutas End -->
+
+    <!-- Nos Caracteriza Start -->
+    <div class="container-fluid py-5 bg-light" id="caracteristicas">
+        <div class="container">
+            <div class="section-header text-center mx-auto mb-5">
+                <h1 class="display-5 mb-3">Nos Caracteriza</h1>
+                <p>Nuestro compromiso es ofrecer las mejores frutas y verduras orgánicas, frescas y sin químicos.</p>
+            </div>
+            <div class="caracteristicas-container">
+                <div class="caracteristica-item">
+                    <div class="caracteristica-content text-center p-4">
+                        <img class="img-fluid mb-4" src="img/icon-1.png" alt="">
+                        <h4 class="mb-3">Proceso Natural</h4>
+                        <p class="mb-4">Cultivo sin el uso de químicos sintéticos, promoviendo prácticas agrícolas que respetan los procesos naturales</p>
+                        <a class="btn btn-primary rounded-pill py-2 px-4" href="">Más Información</a>
+                    </div>
+                </div>
+                <div class="caracteristica-item">
+                    <div class="caracteristica-content text-center p-4">
+                        <img class="img-fluid mb-4" src="img/icon-2.png" alt="">
+                        <h4 class="mb-3">Productos Orgánicos</h4>
+                        <p class="mb-4">Alimentos cultivados sin químicos ni modificaciones genéticas, respetando la naturaleza y la salud.</p>
+                        <a class="btn btn-primary rounded-pill py-2 px-4" href="">Más Información</a>
+                    </div>
+                </div>
+                <div class="caracteristica-item">
+                    <div class="caracteristica-content text-center p-4">
+                        <img class="img-fluid mb-4" src="img/icon-3.png" alt="">
+                        <h4 class="mb-3">Biológicamente Seguros</h4>
+                        <p class="mb-4">Productos están cultivados, tratados y manipulados de manera que no representen riesgos para la salud.</p>
+                        <a class="btn btn-primary rounded-pill py-2 px-4" href="">Más Información</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Nos Caracteriza End -->
+
+    <!-- Productos Start -->
+    <div class="container-fluid py-5" id="productos">
+        <div class="container">
+            <div class="productos-header">
+                <div class="productos-title">
+                    <div class="section-header text-center mx-auto mb-5">
+                        <h1 class="display-5 mb-3">Nuestros Productos</h1>
+                        <p>Desde la selección de semillas hasta la cosecha, seguimos estándares rigurosos para ofrecer productos de calidad.</p>
+                    </div>
+                </div>
+                <div class="productos-tabs">
+                    <ul class="nav nav-pills justify-content-center mb-5">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="pill" href="#tab-1">Frutas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="pill" href="#tab-2">Legumbres</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="pill" href="#tab-3">Tubérculos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="productos-grid">
+                <div class="producto-item">
+                    <div class="producto-card">
+                        <div class="producto-image">
+                            <img class="img-fluid" src="img/product-1.jpg" alt="">
+                        </div>
+                        <div class="producto-info text-center p-3">
+                            <a class="h5 d-block mb-2" href="">Tomate</a>
+                            <span class="text-primary fw-bold">¢1,850.00</span>
+                        </div>
+                        <div class="producto-actions d-flex justify-content-center">
+                            <small class="me-3">
+                                <a class="text-primary" href=""><i class="fa fa-eye me-1"></i>View detail</a>
+                            </small>
+                            <small>
+                                <a class="text-primary" href=""><i class="fa fa-shopping-cart me-1"></i>Add to cart</a>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repetir para todos los productos -->
+                <div class="producto-item">
+                    <div class="producto-card">
+                        <div class="producto-image">
+                            <img class="img-fluid" src="img/product-2.jpg" alt="">
+                        </div>
+                        <div class="producto-info text-center p-3">
+                            <a class="h5 d-block mb-2" href="">Piña</a>
+                            <span class="text-primary fw-bold">¢1,530.00</span>
+                        </div>
+                        <div class="producto-actions d-flex justify-content-center">
+                            <small class="me-3">
+                                <a class="text-primary" href=""><i class="fa fa-eye me-1"></i>View detail</a>
+                            </small>
+                            <small>
+                                <a class="text-primary" href=""><i class="fa fa-shopping-cart me-1"></i>Add to cart</a>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <!-- Continuar con los demás productos... -->
+                <div class="producto-item">
+                    <div class="producto-card">
+                        <div class="producto-image">
+                            <img class="img-fluid" src="img/product-3.jpg" alt="">
+                        </div>
+                        <div class="producto-info text-center p-3">
+                            <a class="h5 d-block mb-2" href="">Chile Picante</a>
+                            <span class="text-primary fw-bold">¢780.00</span>
+                        </div>
+                        <div class="producto-actions d-flex justify-content-center">
+                            <small class="me-3">
+                                <a class="text-primary" href=""><i class="fa fa-eye me-1"></i>View detail</a>
+                            </small>
+                            <small>
+                                <a class="text-primary" href=""><i class="fa fa-shopping-cart me-1"></i>Add to cart</a>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="producto-item">
+                    <div class="producto-card">
+                        <div class="producto-image">
+                            <img class="img-fluid" src="img/product-4.jpg" alt="">
+                        </div>
+                        <div class="producto-info text-center p-3">
+                            <a class="h5 d-block mb-2" href="">Fresa</a>
+                            <span class="text-primary fw-bold">¢2,580.00</span>
+                        </div>
+                        <div class="producto-actions d-flex justify-content-center">
+                            <small class="me-3">
+                                <a class="text-primary" href=""><i class="fa fa-eye me-1"></i>View detail</a>
+                            </small>
+                            <small>
+                                <a class="text-primary" href=""><i class="fa fa-shopping-cart me-1"></i>Add to cart</a>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="producto-item">
+                    <div class="producto-card">
+                        <div class="producto-image">
+                            <img class="img-fluid" src="img/product-5.jpg" alt="">
+                        </div>
+                        <div class="producto-info text-center p-3">
+                            <a class="h5 d-block mb-2" href="">Pepino</a>
+                            <span class="text-primary fw-bold">¢925.00</span>
+                        </div>
+                        <div class="producto-actions d-flex justify-content-center">
+                            <small class="me-3">
+                                <a class="text-primary" href=""><i class="fa fa-eye me-1"></i>View detail</a>
+                            </small>
+                            <small>
+                                <a class="text-primary" href=""><i class="fa fa-shopping-cart me-1"></i>Add to cart</a>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="producto-item">
+                    <div class="producto-card">
+                        <div class="producto-image">
+                            <img class="img-fluid" src="img/product-6.jpg" alt="">
+                        </div>
+                        <div class="producto-info text-center p-3">
+                            <a class="h5 d-block mb-2" href="">Lechuga</a>
+                            <span class="text-primary fw-bold">¢525.00</span>
+                        </div>
+                        <div class="producto-actions d-flex justify-content-center">
+                            <small class="me-3">
+                                <a class="text-primary" href=""><i class="fa fa-eye me-1"></i>View detail</a>
+                            </small>
+                            <small>
+                                <a class="text-primary" href=""><i class="fa fa-shopping-cart me-1"></i>Add to cart</a>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="producto-item">
+                    <div class="producto-card">
+                        <div class="producto-image">
+                            <img class="img-fluid" src="img/product-7.jpg" alt="">
+                        </div>
+                        <div class="producto-info text-center p-3">
+                            <a class="h5 d-block mb-2" href="">Papa</a>
+                            <span class="text-primary fw-bold">¢1,200.00</span>
+                        </div>
+                        <div class="producto-actions d-flex justify-content-center">
+                            <small class="me-3">
+                                <a class="text-primary" href=""><i class="fa fa-eye me-1"></i>View detail</a>
+                            </small>
+                            <small>
+                                <a class="text-primary" href=""><i class="fa fa-shopping-cart me-1"></i>Add to cart</a>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="producto-item">
+                    <div class="producto-card">
+                        <div class="producto-image">
+                            <img class="img-fluid" src="img/product-8.jpg" alt="">
+                        </div>
+                        <div class="producto-info text-center p-3">
+                            <a class="h5 d-block mb-2" href="">Banano</a>
+                            <span class="text-primary fw-bold">¢150.00</span>
+                        </div>
+                        <div class="producto-actions d-flex justify-content-center">
+                            <small class="me-3">
+                                <a class="text-primary" href=""><i class="fa fa-eye me-1"></i>View detail</a>
+                            </small>
+                            <small>
+                                <a class="text-primary" href=""><i class="fa fa-shopping-cart me-1"></i>Add to cart</a>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Productos End -->
+
+    <!-- Visita nuestras fincas Start -->
+    <div class="container-fluid fincas-section" id="fincas">
+        <div class="container">
+            <div class="fincas-content">
+                <div class="fincas-text">
+                    <h1 class="display-4 text-white mb-4">Visita nuestras fincas</h1>
+                    <p class="text-white mb-4">Ven y sumérgete en la experiencia única de visitar nuestras fincas orgánicas, donde la naturaleza y la agricultura sostenible se unen en armonía. Recorre nuestros campos verdes, respira el aire fresco y conoce de cerca nuestras prácticas de cultivo respetuosas con el medio ambiente. Disfruta de la frescura y el sabor auténtico de nuestros productos.</p>
+                </div>
+                <div class="fincas-button">
+                    <a class="btn btn-light btn-lg rounded-pill py-3 px-5" href="">Ingresar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Visita nuestras fincas End -->
+
+    <!-- Nuestro Blog Start -->
+    <div class="container-fluid py-5 bg-light" id="blog">
+        <div class="container">
+            <div class="section-header text-center mx-auto mb-5">
+                <h1 class="display-5 mb-3">Nuestro Blog</h1>
+                <p>Explora la Belleza de Nuestras Fincas Orgánicas: Un Recorrido Virtual por la Agricultura Sostenible y el Sabor Fresco.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow">
+                        <img class="card-img-top" src="img/blog-1.jpg" alt="">
+                        <div class="card-body p-4">
+                            <a class="h5 d-block mb-3 text-decoration-none" href="">Cómo cultivar frutas y verduras orgánicas en tu propia finca</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow">
+                        <img class="card-img-top" src="img/blog-2.jpg" alt="">
+                        <div class="card-body p-4">
+                            <a class="h5 d-block mb-3 text-decoration-none" href="">El cultivo de arroz sostenible implica técnicas respetuosas con el medio ambiente</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow">
+                        <img class="card-img-top" src="img/blog-3.jpg" alt="">
+                        <div class="card-body p-4">
+                            <a class="h5 d-block mb-3 text-decoration-none" href="">Zanahorias libres de pesticidas, cultivadas de forma natural y sostenible.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Nuestro Blog End -->
+
+    <!-- Footer Start -->
+    <footer class="bg-dark text-light py-5" id="contacto">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <h1 class="fw-bold text-primary mb-4">F<span class="text-secondary">oo</span>dy</h1>
+                    <p>Pionera en el cultivo sostenible, utilizando métodos orgánicos y promoviendo la conservación del medio ambiente en cada paso.</p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-light mb-4">Dirección</h4>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Villa Bonita, Alajuela, CR</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+506 2441 6789</p>
+                    <p><i class="fa fa-envelope me-3"></i>info@foody.com</p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-light mb-4">Accesos Rápidos</h4>
+                    <a class="btn btn-link text-light" href="">Nosotros</a>
+                    <a class="btn btn-link text-light" href="">Contáctenos</a>
+                    <a class="btn btn-link text-light" href="">Servicios</a>
+                    <a class="btn btn-link text-light" href="">Términos & Condiciones</a>
+                    <a class="btn btn-link text-light" href="">Soporte</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

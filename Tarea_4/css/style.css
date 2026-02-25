@@ -1,0 +1,246 @@
+/********** Template CSS **********/
+:root {
+    --primary: #3CB815;
+    --secondary: #F65005;
+    --light: #F7F8FC;
+    --dark: #111111;
+}
+
+/*** Section Header ***/
+.section-header {
+    position: relative;
+    padding-top: 25px;
+}
+
+.section-header::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 2px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary);
+}
+
+.text-white{
+    text-shadow: 0px 0px 124px rgba(0, 0, 0, 8) !important;
+}
+
+.btn-outline-light{
+    color: black !important;
+    border-color: black !important;
+}
+
+.section-header::after {
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 2px;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--secondary);
+}
+
+.section-header.text-start::before,
+.section-header.text-start::after {
+    left: 0;
+    transform: translateX(0);
+}
+
+/*** Mejores Frutas Section ***/
+.mejores-frutas-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.mejores-frutas-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.mejores-frutas-content {
+    padding: 2rem;
+}
+
+@media (max-width: 768px) {
+    .mejores-frutas-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+/*** Nos Caracteriza Section ***/
+.caracteristicas-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.caracteristica-item {
+    flex: 1;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.caracteristica-item:hover {
+    transform: translateY(-10px);
+}
+
+.caracteristica-content {
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .caracteristicas-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+
+/*** Productos Section ***/
+.productos-header {
+    margin-bottom: 3rem;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.producto-item {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.producto-item:hover {
+    transform: translateY(-5px);
+}
+
+.producto-image {
+    overflow: hidden;
+    height: 200px;
+}
+
+.producto-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.producto-item:hover .producto-image img {
+    transform: scale(1.1);
+}
+
+.producto-actions {
+    padding: 1rem;
+    border-top: 1px solid #eee;
+}
+
+/*** Fincas Section ***/
+.fincas-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/bg-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+
+.fincas-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.fincas-text {
+    max-width: 600px;
+}
+
+.fincas-button {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .fincas-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .fincas-section {
+        padding: 60px 0;
+    }
+}
+
+/*** Responsive Design ***/
+@media (max-width: 576px) {
+    .productos-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .mejores-frutas-content {
+        padding: 1rem;
+    }
+    
+    .display-4 {
+        font-size: 2rem !important;
+    }
+    
+    .display-5 {
+        font-size: 1.5rem !important;
+    }
+}
+
+/*** Carousel Customization ***/
+.carousel-item {
+    height: 500px;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 300px;
+    }
+}
+
+/*** Navigation Pills ***/
+.nav-pills .nav-link {
+    background: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    margin: 0 5px;
+    border-radius: 25px;
+}
+
+.nav-pills .nav-link.active {
+    background: var(--primary);
+    color: white;
+}
+
+/*** Footer ***/
+footer .btn-link {
+    padding: 0;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+}
+
+footer .btn-link:hover {
+    color: var(--primary) !important;
+}
