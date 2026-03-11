@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Sintaxis Básica | ISW-512</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>JavaScript - Sintaxis Básica</h1>
+        <p>Jurgen Calvo Gonzalez - Tarea 5</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. Control de Flujo y Manejo de Errores</h2>
+            <div>
+                <h3>if...else</h3>
+                <button onclick="ejemploIfElse()">Ejecutar</button>
+                <div id="resultado-if" class="resultado"></div>
+            </div>
+            <div>
+                <h3>switch</h3>
+                <select id="dia">
+                    <option value="1">Lunes</option>
+                    <option value="2">Martes</option>
+                </select>
+                <button onclick="ejemploSwitch()">Ejecutar</button>
+                <div id="resultado-switch" class="resultado"></div>
+            </div>
+            <div>
+                <h3>try/catch/throw</h3>
+                <button onclick="ejemploTryCatch()">Ejecutar</button>
+                <div id="resultado-try" class="resultado"></div>
+            </div>
+            <div>
+                <h3>Objetos Error</h3>
+                <button onclick="ejemploError()">Ejecutar</button>
+                <div id="resultado-error" class="resultado"></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Bucles e Iteración</h2>
+            <div>
+                <h3>for</h3>
+                <button onclick="ejemploFor()">Ejecutar</button>
+                <div id="resultado-for" class="resultado"></div>
+            </div>
+            <div>
+                <h3>while</h3>
+                <button onclick="ejemploWhile()">Ejecutar</button>
+                <div id="resultado-while" class="resultado"></div>
+            </div>
+            <div>
+                <h3>do...while</h3>
+                <button onclick="ejemploDoWhile()">Ejecutar</button>
+                <div id="resultado-dowhile" class="resultado"></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>3. Funciones</h2>
+            <div>
+                <h3>Definir y Llamar Funciones</h3>
+                <input type="text" id="nombre" placeholder="Nombre">
+                <button onclick="ejemploFunciones()">Ejecutar</button>
+                <div id="resultado-funciones" class="resultado"></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>4. Expresiones y Operadores</h2>
+            <div>
+                <h3>Operadores Aritméticos</h3>
+                <input type="number" id="num1" value="10">
+                <input type="number" id="num2" value="3">
+                <button onclick="ejemploOperadores()">Ejecutar</button>
+                <div id="resultado-operadores" class="resultado"></div>
+            </div>
+            <div>
+                <h3>Operadores Lógicos</h3>
+                <label><input type="checkbox" id="cond1"> Condición 1</label>
+                <label><input type="checkbox" id="cond2"> Condición 2</label>
+                <button onclick="ejemploLogicos()">Ejecutar</button>
+                <div id="resultado-logicos" class="resultado"></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>5. Números y Fechas</h2>
+            <div>
+                <h3>Objeto Number</h3>
+                <button onclick="ejemploNumber()">Ejecutar</button>
+                <div id="resultado-number" class="resultado"></div>
+            </div>
+            <div>
+                <h3>Objeto Math</h3>
+                <button onclick="ejemploMath()">Ejecutar</button>
+                <div id="resultado-math" class="resultado"></div>
+            </div>
+            <div>
+                <h3>Objeto Date</h3>
+                <button onclick="ejemploDate()">Ejecutar</button>
+                <div id="resultado-date" class="resultado"></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>6. Formateo de Texto</h2>
+            <div>
+                <h3>Cadenas Literales</h3>
+                <button onclick="ejemploCadenas()">Ejecutar</button>
+                <div id="resultado-cadenas" class="resultado"></div>
+            </div>
+            <div>
+                <h3>Objeto String</h3>
+                <button onclick="ejemploString()">Ejecutar</button>
+                <div id="resultado-string" class="resultado"></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>7. Colecciones Indexadas</h2>
+            <div>
+                <h3>Arreglos</h3>
+                <button onclick="ejemploArreglos()">Ejecutar</button>
+                <div id="resultado-arreglos" class="resultado"></div>
+            </div>
+            <div>
+                <h3>Arreglos Tipados</h3>
+                <button onclick="ejemploArreglosTipados()">Ejecutar</button>
+                <div id="resultado-tipados" class="resultado"></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>8. DOM</h2>
+            <div>
+                <h3>Encontrar Elementos</h3>
+                <div id="elemento-id">Elemento con ID</div>
+                <p class="elemento-clase">Elemento con clase</p>
+                <span>Elemento span</span>
+                <button onclick="ejemploDOM()">Ejecutar</button>
+                <div id="resultado-dom" class="resultado"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
